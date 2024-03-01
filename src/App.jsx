@@ -7,7 +7,7 @@ import './App.css'
 // only import the components you're using
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Collapse from 'react-bootstrap/Collapse';
+import Nav from './components/Nav'
 import Footer from './components/Footer'
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+      <Nav />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
