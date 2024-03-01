@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import githubLogo from './assets/github.svg'
 import './scss/App.scss'
 import './App.css'
 // only import the components you're using
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import Collapse from 'react-bootstrap/Collapse';
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +37,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Footer />
     </>
   )
 }

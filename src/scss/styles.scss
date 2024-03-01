@@ -1,9 +1,9 @@
 /* make the customizations */
 // EXAMPLE
-// $theme-colors: (
-//   'info': tomato,
-//   'danger': teal
-// );
+$theme-colors: (
+  'primary': #6709FF,
+);
+
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
