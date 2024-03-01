@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import './scss/App.scss'
 import './App.css'
+// only import the components you're using
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,14 +22,16 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button className='btn btn-primary rounded-pill' onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
+      <Card bg={'light'} text={'dark'}>
+        <Card.Body>
+          <Button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </Button>
+          <Card.Text>
+            Edit <code>src/App.jsx</code> and save to test HMR
+          </Card.Text>
+        </Card.Body>
+      </Card>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
