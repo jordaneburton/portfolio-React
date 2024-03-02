@@ -8,9 +8,12 @@ function HomePage () {
   }, []);
 
   return (
-    <div className="container pt-4 text-light">
-      HOME
-    </div>
+    <>
+      
+      <div className="container pt-4 text-light">
+        HOME
+      </div>
+    </>
   );
 }
 
