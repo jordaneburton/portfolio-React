@@ -1,19 +1,27 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom';
+import { PageProvider } from './utils/PageContext';
 import './scss/App.scss'
 import './App.css'
 // only import the components you're using
-import Nav from './components/Nav'
+// import Nav from './components/Nav'
 import NavCanvas from './components/NavCanvas'
+import Shapes from './components/Shapes'
 import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const title = "Jordan Burton's Portfolio";
+  useEffect(() => {
+    document.title = title;
+  }, []);
 
   return (
     <>
-      <NavCanvas />
-      <Outlet />
+      <PageProvider>
+        <NavCanvas />
+        <Outlet />
+      </PageProvider>
+      <Shapes />
       <Footer />
     </>
   )

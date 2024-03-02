@@ -5,27 +5,73 @@
   text-align: center;
 }
 
+body {
+  background-image: url('./assets/black-technology-banner.png');
+  background-position: center;
+  z-index: -1;
+}
+
+/* NAVIGATION */
+
 .nav-link {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: white !important;
+}
+
+.nav-link:hover {
+  background-color: #EF626C;
 }
 
 .bi-list {
   fill: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* SHAPES */
+
+.shapes-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  mix-blend-mode: difference;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+#header-circle, #header-square, #header-triangle {
+  width: 9rem;
+  height: 9rem;
+  color: white;
+  z-index: -1;
+
+  animation-name: shape-spin;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+#header-circle {
+  left: 70%;
+  top: 35%;
+  animation-direction: reverse;
+}
+
+#header-square {
+  right: 76%;
+  top: 10%;
+}
+
+#header-triangle {
+  right: 50%;
+  top: 65%;
+  animation-direction: reverse;
+}
+
+/* ANIMATIONS */
+
+@keyframes shape-spin {
+  0% {rotate: 0}
+  25% {rotate: 90deg}
+  50% {rotate: 180deg}
+  75% {rotate: 270deg}
+  100% {rotate: 360deg}
 }
 
 @keyframes logo-spin {
@@ -37,16 +83,25 @@
   }
 }
 
+/* BREAKPOINTS */
+
+@media (min-width: 768px) {
+
+  #header-circle, #header-square, #header-triangle {
+      width: 15rem;
+      height: 15rem;
+      color: white;
+      z-index: -1;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  #header-circle, #header-square, #header-triangle {
+    animation-duration: 48s;
   }
 }
 
+
+/* idk what this is for exactly but it keeps the footer looking nice */
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
