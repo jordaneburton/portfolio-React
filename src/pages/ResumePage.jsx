@@ -84,10 +84,10 @@ function ResumePage () {
         </Col>
         <Col>
           <Link
-          to={fileUrl}
-          download="Burton-Jordan-Resume"
-          target="_blank"
-          rel="noreferrer"
+            to={fileUrl}
+            download="Burton-Jordan-Resume"
+            target="_blank"
+            rel="noreferrer"
           >
             <Button className='position-relative rounded-pill z-3 my-4'>
             Download Resume
