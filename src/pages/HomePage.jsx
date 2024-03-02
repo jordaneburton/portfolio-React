@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { usePageContext } from '../utils/PageContext';
+import PageHeader from '../components/PageHeader';
 
 function HomePage () {
   const { _, setPage } = usePageContext();
@@ -7,12 +8,15 @@ function HomePage () {
     setPage("Home")
   }, []);
 
+  const page = {
+    header: "WELCOME"
+  }
   return (
     <>
-      
-      <div className="container pt-4 text-light">
-        HOME
-      </div>
+      <PageHeader header={page.header}/>
+      <h2>
+      Thank you for visiting my portfolio. I look forward to connecting with fellow developers, designers, and potential collaborators. Let's build something extraordinary together!
+      </h2>
     </>
   );
 }
