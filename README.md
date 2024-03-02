@@ -1,8 +1,7 @@
-# React + Vite
+# My Cool-looking Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I made this portfolio using React.js and React-Bootstrap. The application is built using Vite and utilizes Bootstraps framework for both styling and components.
 
-Currently, two official plugins are available:
+Here's a link to the [deployed application](https://eloquent-mousse-f061f3.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I have not finished this README, nor the actual site lol. But I plan on doing it very soon... I'm just a little tired rn
