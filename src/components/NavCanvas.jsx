@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePageContext } from '../utils/PageContext';
 import { Link } from 'react-router-dom';
 
@@ -10,14 +10,18 @@ import Nav from 'react-bootstrap/Nav'
 function NavCanvas() {   
     const [show, setShow] = useState(false);
     const { currentPage, setPage } = usePageContext();
-
+    
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    
+    useEffect(() => {
+        setShow(false);
+    }, [currentPage]);
     
     return (
         <>
             <Button variant="primary" onClick={handleShow} 
-                className="position-absolute rounded-start-pill top-0 end-0 my-3 z-3"
+                className="position-fixed rounded-start-pill top-0 end-0 my-3 z-3"
                 style={{ width:"7rem", height: "5rem"}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="85%" height="85%" fillRule="inherit" className="bi bi-list ms-3" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>

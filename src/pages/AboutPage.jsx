@@ -31,9 +31,9 @@ function AboutPage () {
           </p>
 
           <p className='fs-4 d-none d-md-block align-bottom'>
-            Welcome to my portfolio! I'm Jordan Burton, a junior full stack web developer with a unique background in aerospace engineering. My journey began at the University of Texas at Austin, where I immersed myself in the complexities of aerospace technology, honing my problem-solving skills and attention to detail.
+            Welcome to my portfolio! I'm Jordan Burton, a junior full stack web developer with a unique background in aerospace engineering. My journey began at the University of Texas at Austin, where I immersed myself in the complexities of rocket science, honing my problem-solving skills and attention to detail.
           </p><p className='fs-4 d-none d-md-block mt-5 align-bottom'>
-            While my passion for aerospace remains, my fascination with technology led me to explore the world of web development. I thrive on the creative challenges of crafting intuitive user experiences and turning ideas into functional, elegant solutions. From frontend design to backend logic, I enjoy every aspect of the development process.
+            While my passion for engineering remains, my fascination with technology led me to explore the realm of web development. I thrive on the creative challenges of crafting intuitive user experiences and turning ideas into functional, elegant solutions. From frontend design to backend logic, I enjoy every aspect of the development process (with frontend as a preference).
           </p><p className='fs-4 d-none d-md-block mt-5 align-bottom'>
             Combining my technical expertise with a relentless curiosity, I continuously seek to expand my knowledge and stay abreast of the latest trends and technologies in the ever-evolving world of web development. Whether it's building responsive websites or optimizing backend functionality, I approach each project with enthusiasm and dedication.
           </p><p className='fs-4 d-none d-md-block mt-5 align-bottom'>
