@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 function Footer() {
     return (
         <>
-            <Card bg={'primary'} className="fixed-bottom rounded-bottom-0 rounded-top-5 z-3" style={{ height: '8rem' }}>
+            <Card bg={'primary'} className="fixed-bottom rounded-bottom-0 rounded-top-5 z-3" style={{ height: '7.5rem' }}>
                 {/* mobile footer */}
                 <div className="row justify-content-evenly h-100 d-md-none">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="bi bi-linkedin w-25 col-4" viewBox="0 0 16 16" aria-label="LinkedIn Logo">

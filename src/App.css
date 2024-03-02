@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+.nav-link {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: white !important;
+}
+
+.bi-list {
+  fill: white;
+}
 
 .logo {
   height: 6em;
