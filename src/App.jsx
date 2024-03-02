@@ -4,7 +4,6 @@ import { PageProvider } from './utils/PageContext';
 import './scss/App.scss'
 import './App.css'
 // only import the components you're using
-// import Nav from './components/Nav'
 import NavCanvas from './components/NavCanvas'
 import Shapes from './components/Shapes'
 import Footer from './components/Footer'
@@ -21,6 +20,7 @@ function App() {
         <NavCanvas />
         <Outlet />
       </PageProvider>
+      
       <Shapes />
       <Footer />
     </>
