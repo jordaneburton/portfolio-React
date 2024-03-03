@@ -11,7 +11,7 @@
 /* PAGE STRUCTURING AND HEADERS */
 
 body {
-  background-image: url('./assets/black-technology-banner.png');
+  background-image: url('/assets/black-technology-banner.png');
   background-position: center;
   z-index: -1;
 }

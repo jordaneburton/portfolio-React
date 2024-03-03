@@ -21,7 +21,7 @@ function AboutPage () {
 
       <Row className='justify-content-center align-self-start page-margin'>
         <Col xs={9} md={3}>
-          <Image src="src/assets/profile_picture.jpg" className='border border-4 border-light rounded-pill mb-3 z-2' fluid role="img" aria-label='Profile of Jordan Burton'/>
+          <Image src="/assets/profile_picture.jpg" className='border border-4 border-light rounded-pill mb-3 z-2' fluid role="img" aria-label='Profile of Jordan Burton'/>
         </Col>
         <Col xs={12} md={6}>
           <p className='fs-5 d-md-none'>

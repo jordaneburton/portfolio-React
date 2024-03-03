@@ -3,7 +3,7 @@ import { usePageContext } from '../utils/PageContext';
 import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
 import ListItem from '../components/ListItem';
-import fileUrl from '../assets/Burton_Jordan_Resume.pdf';
+import fileUrl from '/assets/Burton_Jordan_Resume.pdf';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

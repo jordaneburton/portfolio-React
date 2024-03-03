@@ -37,7 +37,7 @@ function ContactPage () {
         <Col xs={12} className='w-100 my-5'>
           <h2>Or Give Me A Call!</h2>
           <p className='position-relative z-3 fs-3'>
-            678-999-8212
+            (210)-749-5284
           </p>
         </Col>
       </Row>
