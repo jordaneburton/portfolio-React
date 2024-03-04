@@ -17,7 +17,7 @@ function ContactPage () {
     header: "CONTACT"
   }
 
-  const emailUrl = "mailto:jordane.burton@gmail.com?body=Say Hi!";
+  const emailUrl = "mailto:jordane.burton@gmail.com?body=Say Hi! (or if you want to hire me, you can do that too!)";
 
   return (
     <>
