@@ -48,6 +48,7 @@ function PortfolioPage () {
     <>
       <PageHeader header={page.header}/>
       <Row className='justify-content-evenly align-self-center page-margin'>
+        <h2>Try clicking the project titles!</h2>
           {projects.map((project, index) => 
             <ProjectCard key={index}
               urlLinks={project.urlLinks} thumbnail={project.thumbnail} title={project.title}>

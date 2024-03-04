@@ -68,14 +68,16 @@ function ResumePage () {
         <Col xs={12} className='d-flex flex-wrap justify-content-center mt-4'>
           { (variant)
           ? <ul className="">
-              {frontendSkills.map((skill) => (
-                <ListItem skill={skill}>
+              {frontendSkills.map((skill, index) => (
+                <ListItem key={index} 
+                  skill={skill}>
                 </ListItem>
               ))}
             </ul>
           : <ul className="">
-              {backendSkills.map((skill) => (
-                <ListItem skill={skill}>
+              {backendSkills.map((skill, index) => (
+                <ListItem key={index}
+                  skill={skill}>
                 </ListItem>
               ))}
             </ul>
