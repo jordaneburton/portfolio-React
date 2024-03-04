@@ -5,7 +5,8 @@ import PageHeader from '../components/PageHeader';
 function HomePage () {
   const { _, setPage } = usePageContext();
   useEffect(() => {
-    setPage("Home")
+    setPage("Home");
+    window.scrollTo(0, 0);
   }, []);
 
   const page = {

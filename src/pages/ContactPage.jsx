@@ -5,12 +5,12 @@ import PageHeader from '../components/PageHeader';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
 function ContactPage () {
   const { _, setPage } = usePageContext();
   useEffect(() => {
-    setPage("Contact")
+    setPage("Contact");
+    window.scrollTo(0, 0);
   }, []);
 
   const page = {

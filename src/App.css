@@ -48,6 +48,17 @@ h1 {
   height: 6rem;
 }
 
+/* PROJECT CARDS */
+.project-card {
+  img {
+    width: 20rem;
+    height: 14rem;
+  }
+  svg {
+    mix-blend-mode: exclusion;
+  }
+}
+
 /* SHAPES */
 
 .shapes-container {

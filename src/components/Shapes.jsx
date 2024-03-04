@@ -1,7 +1,7 @@
 function Shapes() {
     return (
         <>
-            <div className="shapes-container fixed-top start-0 vw-100 vh-100 z-2">
+            <div className="shapes-container fixed-top start-0 vw-100 vh-100 z-1">
                 
                 <svg id="header-circle" xmlns="http://www.w3.org/2000/svg" fill="url(#gradient-circle)"
                     className="bi bi-circle-fill position-absolute" viewBox="0 0 16 16">

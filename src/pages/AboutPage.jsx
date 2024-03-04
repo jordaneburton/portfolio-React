@@ -9,7 +9,8 @@ import Image from 'react-bootstrap/Image';
 function AboutPage () {
   const { _, setPage } = usePageContext();
   useEffect(() => {
-    setPage("About")
+    setPage("About");
+    window.scrollTo(0, 0);
   }, []);
   
   const page = {

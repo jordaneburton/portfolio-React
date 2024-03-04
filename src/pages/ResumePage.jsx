@@ -12,13 +12,13 @@ import Button from 'react-bootstrap/Button';
 function ResumePage () {
   const { _, setPage } = usePageContext();
   const [variant, setVariant] = useState(true);
-  // const [variantBackend, setBackend] = useState('secondary');
 
   const frontendClick = () => setVariant(true);
   const backendClick = () => setVariant(false);
 
   useEffect(() => {
-    setPage("Resume")
+    setPage("Resume");
+    window.scrollTo(0, 0);
   }, []);
   
   const page = {
@@ -47,7 +47,6 @@ function ResumePage () {
     'MERN'
   ]
 
-  // const fileUrl = 'Burton_Jordan_Resume';
   const fileName = 'Burton_Jordan_Resume';
 
   return (
