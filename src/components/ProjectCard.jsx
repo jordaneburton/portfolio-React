@@ -42,23 +42,31 @@ function ProjectCard({ urlLinks, thumbnail, title, thumbnailOpt, techStack }) {
     const technologies = (
         <Popover id="popover-basic">
             <Popover.Header>
-            <h5>
+            <h4>
                 <strong>Tech Stack</strong>
-            </h5>
+            </h4>
             </Popover.Header>
+            <Popover.Body>
+                <h5>| 
             {techStack.map((tech, index) => 
-                <Popover.Body>
-                    <h5>{tech}</h5>
-                </Popover.Body>
+                <span> {tech} | </span>
+                // {if (index == 1) {
+                //     <h5>{tech}</h5>
+                // }else {
+                //     <h5>, {tech}</h5>
+                // }
+                // }
             )}
+                </h5>
+            </Popover.Body>
         </Popover>
       );
     
     return (
         <>
             <Col xs={12} md={6} lg={4} className='project-card position-relative z-2 my-5'>
-                <div>
-                    <OverlayTrigger trigger="hover" placement="right" overlay={technologies}>
+                <div className=''>
+                    <OverlayTrigger placement="top" overlay={technologies}>
                         <Image src={thumbnail} thumbnail={thumbnailOpt} role='img' aria-label='Project thumbnail'/>
                     </OverlayTrigger>
                 </div>

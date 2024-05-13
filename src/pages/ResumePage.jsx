@@ -26,9 +26,10 @@ function ResumePage () {
   }
 
   const frontendSkills = [
+    'React',
+    'Java',
     'Javascript', 
-    'Bootstrap', 
-    'React-Bootstrap', 
+    'Bootstrap',  
     'HTML5', 
     'CSS', 
     'Tailwind', 
@@ -37,11 +38,12 @@ function ResumePage () {
   ]
 
   const backendSkills = [
+    'Spring Boot',
+    'Thymeleaf',
     'MySQL', 
     'Node', 
     'MongoDB', 
-    'Express', 
-    'ReactJS', 
+    'Express',  
     'Github', 
     'GraphQL', 
     'MERN'
