@@ -9,7 +9,6 @@ import Popover from 'react-bootstrap/Popover';
 function ProjectCard({ urlLinks, thumbnail, title, thumbnailOpt, techStack }) {
     const [isHovered, setIsHovered] = useState(false);
     const [isHoveredGit, setIsHoveredGit] = useState(false);
-    const [isHoveredImg, setIsHoveredImg] = useState(false);
 
     const handleMouseEnter = () => {
       setIsHovered(true);
@@ -17,18 +16,12 @@ function ProjectCard({ urlLinks, thumbnail, title, thumbnailOpt, techStack }) {
     const handleMouseEnterGit = () => {
         setIsHoveredGit(true);
     };
-    const handleMouseEnterImg = () => {
-        setIsHoveredImg(true);
-    };
 
     const handleMouseLeave = () => {
       setIsHovered(false);
     };
     const handleMouseLeaveGit = () => {
         setIsHoveredGit(false);
-    };
-    const handleMouseLeaveImg = () => {
-        setIsHoveredImg(false);
     };
     
     function openLink() {
@@ -47,17 +40,11 @@ function ProjectCard({ urlLinks, thumbnail, title, thumbnailOpt, techStack }) {
             </h4>
             </Popover.Header>
             <Popover.Body>
-                <h5>| 
-            {techStack.map((tech, index) => 
-                <span> {tech} | </span>
-                // {if (index == 1) {
-                //     <h5>{tech}</h5>
-                // }else {
-                //     <h5>, {tech}</h5>
-                // }
-                // }
-            )}
-                </h5>
+                <p className='fs-5'><strong>| </strong> 
+                {techStack.map((tech, index) => 
+                    <span> {tech} <strong>| </strong></span>
+                )}
+                </p>
             </Popover.Body>
         </Popover>
       );
