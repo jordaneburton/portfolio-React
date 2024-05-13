@@ -29,7 +29,7 @@ function PortfolioPage () {
       thumbnail: '/assets/cooking-icon.png',
       title: 'Online Cookbook',
       thumbnailOpt: true,
-      techStack: ['Javascript', 'Bootstrap', 'RESTful API']
+      techStack: ['Javascript', 'TailwindCSS', 'RESTful API']
     },
     {
       urlLinks: ['https://tinder-for-jobs-53eebacc42f4.herokuapp.com/', 'https://github.com/jordaneburton/tinder-for-jobs'],
