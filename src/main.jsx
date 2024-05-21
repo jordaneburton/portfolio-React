@@ -10,6 +10,7 @@ import './scss/styles.scss'
 
 // Bringing in the pages the router will use to conditionally show the appropriate views
 import App from './App';
+import ErrorPage from './pages/ErrorPage'
 import GamePage from './pages/GamePage';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <GamePage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
