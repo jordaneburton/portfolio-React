@@ -5,6 +5,7 @@ import './App.css'
 // only import the components you're using
 import NavCanvas from './components/NavCanvas'
 import Shapes from './components/Shapes'
+import ProfilePic from './components/ProfilePic'
 import Footer from './components/Footer'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <PageProvider>
         <NavCanvas />
+        <ProfilePic />
         <Outlet />
       </PageProvider>
 
