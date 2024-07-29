@@ -69,13 +69,6 @@ function NavCanvas() {
                                     >CONTACT</Link>
                                 : <Link to="Contact" className="nav-link py-3 rounded-pill" href="Contact">CONTACT</Link>
                             }
-                            
-                            { (currentPage.title === "Game") 
-                                ? <Link to="Game" className="nav-link py-3 rounded-pill" 
-                                    style={{ backgroundColor: "#EF626C" }}
-                                    >GAME</Link>
-                                : <Link to="Game" className="nav-link py-3 rounded-pill" href="Game">GAME</Link>
-                            }
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
