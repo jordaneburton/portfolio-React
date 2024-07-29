@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import './index.css'
 // Import our custom CSS
@@ -19,7 +19,7 @@ import ResumePage from './pages/ResumePage';
 import ContactPage from './pages/ContactPage';
 
 // Define the accessible routes, and which components respond to which URL
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
